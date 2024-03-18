@@ -56,7 +56,7 @@ namespace dasignoSAS.Controllers
         // Create user
         [Route("createUser")]
         [HttpPost]
-        public async Task<ActionResult<bool>> PostUser(UserInsCommand request)
+        public async Task<ActionResult<bool>> CreateUser(UserInsCommand request)
         {
             var result = await Mediator.Send(request);
             return result ;
