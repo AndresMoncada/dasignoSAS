@@ -37,7 +37,7 @@ namespace dasignoSAS.Items.Commands.UserFHandler.Create
                 };
 
                 _context.Users.Add(user);
-                await _context.SaveChangesAsync();
+                await _context.SaveChangesAsync(cancellationToken);
             }
             catch (Exception)
             {   
